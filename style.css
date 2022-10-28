@@ -19,3 +19,16 @@
     align-items: center;
     font-family: "maloney";
 }
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 75px;
+    background-color: #014995;
+}
+
+.navbar > p{
+    padding: 10px;
+}
