@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "maloney";
+    src: url(fonts/maloney-font/Maloney-mLVqV.ttf) format('truetype');
+}
+
 .title {
     text-align: center;
     font-style: bold;
@@ -12,4 +17,5 @@
     background-image: url("images/brooklynbridge2.jpg");
     background-size: cover;
     align-items: center;
+    font-family: "maloney";
 }
