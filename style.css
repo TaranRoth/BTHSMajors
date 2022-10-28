@@ -1,0 +1,15 @@
+.title {
+    text-align: center;
+    font-style: bold;
+    color: white;
+    padding-top: 250px;
+    font-size: 100px;
+}
+
+.hero {
+    width: 100%;
+    height: 800px;
+    background-image: url("images/brooklynbridge2.jpg");
+    background-size: cover;
+    align-items: center;
+}
