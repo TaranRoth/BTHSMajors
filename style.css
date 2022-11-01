@@ -24,11 +24,29 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-end;
     padding-right: 75px;
     background-color: #014995;
 }
 
-.navbar > p{
-    padding: 10px;
+.majors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 500px);
+    height:100%;
+}
+
+.major {
+    background-color: black
+}
+
+.major > h1 {
+    text-align: center;
+    padding-top: 50px;
+    color:azure;
+}
+
+.major > .img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
