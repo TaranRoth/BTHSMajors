@@ -3,6 +3,10 @@
     src: url(fonts/maloney-font/Maloney-mLVqV.ttf) format('truetype');
 }
 
+body {
+    background-color: grey;
+}
+
 .title {
     text-align: center;
     font-style: bold;
@@ -32,11 +36,21 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 500px);
+    grid-gap: 20px;
+    padding: 20px;
     height:100%;
 }
 
+@media screen and (max-width: 768px) {
+    .majors {
+        grid-template-columns: auto;
+    }
+}
+
 .major {
-    background-color: black
+    background-color: black;
+    border: 5px solid rebeccapurple;
+    border-radius: 50px;
 }
 
 .major > h1 {
