@@ -48,9 +48,10 @@ body {
 }
 
 .major {
-    background-color: black;
     border: 5px solid rebeccapurple;
     border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .major > h1 {
@@ -63,4 +64,76 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#advHealth {
+    background-image: url('images/health.jpg');
+}
+
+#aero {
+    background-image: url('images/aero.jpg');
+}
+
+#arch {
+    background-image: url('images/architec.jpg');
+}
+
+#bio {
+    background-image: url('images/bio.jpg');
+}
+
+#chemEng {
+    background-image: url('images/chem.jpg');
+}
+
+#civEng {
+    background-image: url('images/civil.jpg');
+}
+
+#elecEng {
+    background-image: url('images/elec.jpg')
+}
+
+#env {
+    background-image: url('images/env.png');
+}
+
+#finance {
+    background-image: url('images/fin.webp');
+}
+
+#industrial {
+    background-image: url('images/industrial.webp');
+}
+
+#las {
+    background-image: url('images/las.png');
+}
+
+#math {
+    background-image: url('images/math.jpg');
+}
+
+#mech {
+    background-image: url('images/mech.webp');
+}
+
+#media {
+    background-image: url('images/media.jpg');
+}
+
+#pharmd {
+    background-image: url('images/pharmd.jpg');
+}
+
+#physics {
+    background-image: url('images/physics.jpg')
+}
+
+#software {
+    background-image: url('images/software.jpg');
+}
+
+#ssr {
+    background-image: url('images/ssr.jpg');
 }
