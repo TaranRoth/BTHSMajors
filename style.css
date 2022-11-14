@@ -27,9 +27,20 @@ body {
 .navbar{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding-right: 75px;
-    background-color: #014995;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkblue;
+    height: 75px;
+}
+
+
+
+.navbar > a{
+    width: 100px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 900;
+    padding-right: 10px;
 }
 
 .majors {
