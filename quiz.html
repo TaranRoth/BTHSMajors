@@ -18,7 +18,7 @@
     <h1>Quiz</h1>
 
     
-    <form>
+    <form onsubmit="chooseMajor();">
         <h1>What major should you pick?</h1>
         <div>
             <h2>What's your favorite color?</h2>
@@ -57,7 +57,7 @@
             <input type="radio" name="smart" id="no" value="No">
             <label for="no">No</label>
         </div>
-        <button onclick="chooseMajor();">Submit</button>
+        <input type="submit" value="Submit">
     </form>
 
     <h1 id="result"></h1>
