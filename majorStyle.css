@@ -6,7 +6,6 @@
     background-color: darkblue;
     height: 75px;
     overflow: hidden;
-
 }
 
 .navbar > a{
@@ -17,22 +16,22 @@
     padding-right: 10px;
 }
 
-h1{
-    text-align: center;
-}
-
 body{
-    background-color: grey;
     margin: 0px;
+    background-color: grey;
 }
 
-form{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 500;
 }
 
-input {
-    margin: .4rem;
+ul, h2{
+    margin-left: 10px;
+}
+
+li{
+    font-family: cursive
 }
