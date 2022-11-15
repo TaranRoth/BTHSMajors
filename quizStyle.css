@@ -1,13 +1,4 @@
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: darkblue;
-    height: 75px;
-    overflow: hidden;
 
-}
 
 .navbar > a{
     width: 100px;

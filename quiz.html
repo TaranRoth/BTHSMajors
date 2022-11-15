@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quizStyle.css">
+    <link rel="stylesheet" href="style.css">
     <title>Quiz</title>
 </head>
 <body>
@@ -18,19 +19,54 @@
 
     
     <form>
+        <h1>What major should you pick?</h1>
         <div>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label>
+            <h2>What's your favorite color?</h2>
+            <input type="radio" name="fav_color" id="red" value="Red">
+            <label for="red">Red</label>
+            <br>
+            <input type="radio" name="fav_color" id="blue" value="Blue">
+            <label for="blue">Blue</label>
+            <br>
+            <input type="radio" name="fav_color" id="green" value="Green">
+            <label for="green">Green</label>
+            <br>
+            <input type="radio" name="fav_color" id="yellow" value="Yellow">
+            <label for="yellow">Yellow</label>
         </div>
         <div>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label> 
+            <h2>What's your favorite animal?</h2>
+            <input type="radio" name="fav_animal" id="lion" value="Lion">
+            <label for="lion">Lion</label>
+            <br>
+            <input type="radio" name="fav_animal" id="giraffe" value="Giraffe">
+            <label for="giraffe">Giraffe</label>
+            <br>
+            <input type="radio" name="fav_animal" id="seal" value="Seal">
+            <label for="seal">Seal</label>
+            <br>
+            <input type="radio" name="fav_animal" id="mole" value="Mole">
+            <label for="mole">Mole</label>
         </div>
         <div>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label>
+            <h2>Are you smart?</h2>
+            <br>
+            <input type="radio" name="smart" id="yes" value="Yes">
+            <label for="Yes">Yes</label>
+            <br>
+            <input type="radio" name="smart" id="no" value="No">
+            <label for="no">No</label>
         </div>
-        <input type="Submit" value="Submit"name="">
+        <button onclick="chooseMajor();">Submit</button>
     </form>
+
+    <h1 id="result"></h1>
 </body>
+<script>
+    function chooseMajor() {
+        e.preventDefault();
+        var color = document.getElementByName("fav_color").innerHTML;
+        console.log(color);
+    }
+</script>
 </html>
