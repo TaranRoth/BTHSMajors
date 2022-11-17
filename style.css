@@ -59,9 +59,12 @@ body {
     }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1600px) {
     .majors {
         grid-template-columns: repeat(3, 1fr);
+    }
+    body{
+        height: 3150px;
     }
 }
 
@@ -230,4 +233,11 @@ body {
 .foot{
     display: flex;
     height: 75px;
+    background-color: rgb(152, 152, 152);
+}
+
+.foot > p{
+    margin-left: 20px;
+    margin-top: 25px;
+    color: white;
 }
