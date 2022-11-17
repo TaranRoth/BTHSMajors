@@ -59,6 +59,12 @@ body {
     }
 }
 
+@media screen and (min-width: 1680px) {
+    .majors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .major {
     border: 5px solid rebeccapurple;
     border-radius: 50px;
