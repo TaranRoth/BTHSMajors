@@ -59,6 +59,12 @@ body {
     }
 }
 
+@media screen and (min-width: 1680px) {
+    .majors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .major {
     border: 5px solid rebeccapurple;
     border-radius: 50px;
@@ -88,8 +94,16 @@ body {
     background-image: url('images/aero.jpg');
 }
 
+#aero > h1{
+    color: yellow;
+}
+
 #arch {
     background-image: url('images/architec.jpg');
+}
+
+#arch > h1{
+    color: black;
 }
 
 #bio {
@@ -101,11 +115,15 @@ body {
 }
 
 #chemEng > h1 {
-    color: blue;
+    color: red;
 }
 
 #civEng {
     background-image: url('images/civil.jpg');
+}
+
+#civEng > h1{
+    color: black;
 }
 
 #elecEng {
@@ -118,6 +136,7 @@ body {
 
 #env > h1 {
     color: gold;
+    color: violet;
 }
 
 #finance {
@@ -136,6 +155,10 @@ body {
     background-image: url('images/las.png');
 }
 
+#las > h1{
+    color: yellow;
+}
+
 #math {
     background-image: url('images/math.jpg');
 }
@@ -148,8 +171,16 @@ body {
     background-image: url('images/media.jpg');
 }
 
+#media > h1{
+    color: yellow;
+}
+
 #pharmd {
     background-image: url('images/pharmd.jpg');
+}
+
+#pharmd > h1{
+    color: red;
 }
 
 #physics {
@@ -162,6 +193,10 @@ body {
 
 #ssr {
     background-image: url('images/ssr.jpg');
+}
+
+#ssr > h1{
+    color: red;
 }
 
 #advHealth > h1 {
@@ -183,4 +218,16 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+#mech > h1 {
+    color: rgb(104, 89, 4);
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.foot{
+    display: flex;
+    height: 75px;
 }
