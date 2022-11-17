@@ -63,7 +63,7 @@ body {
     .majors {
         grid-template-columns: repeat(3, 1fr);
     }
-    body{
+    #home{
         height: 3150px;
     }
 }
