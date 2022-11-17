@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quizStyle.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Quiz</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
     <h1>Quiz</h1>
 
     
-    <form onsubmit="chooseMajor();">
+    <form id="quiz">
         <h1>What major should you pick?</h1>
         <div>
             <h2>What's your favorite color?</h2>
@@ -59,6 +60,7 @@
         </div>
         <input type="submit" value="Submit">
     </form>
+    <h1 id="result"></h1>
     <div id="gallery">
         <img src="images/aero.jpg" alt="No image">
         <img src="images/math.jpg" alt="No image">
@@ -73,13 +75,17 @@
         <img src="images/fin.webp" alt="No image">
         <img src="images/health.jpg" alt="No image">
     </div>
-    <h1 id="result"></h1>
 </body>
 <script>
-    function chooseMajor() {
+    $("#quiz").submit((e) => {
         e.preventDefault();
-        var color = document.getElementByName("fav_color").innerHTML;
-        console.log(color);
-    }
+        const color = document.querySelector('input[name="fav_color"]:checked').value;
+        const animal = document.querySelector('input[name="fav_animal"]:checked').value;
+        const smart = document.querySelector('input[name="smart"]:checked').value;
+        var major = "";
+        const majors = ["Aerospace Engineering", "Applied Mathematics", "Architectural Engineering", "Biological Sciences", "Chemical Engineering", "Civil Engineering", "Electrical Engineering", "Environmental Sceince", "Finance", "Industrial Design", "Law & Society", "LIU PharmD", "LIU Advanced Health Professions", "Mechatronics and Robotics", "Media Communications", "Physics", "Social Science Research", "Software Engineering"]
+        $("#result").text("Based on your choices of " + color + ", " + animal + ", and " + smart + ", your major is " + majors[Math.floor(Math.random() * 18) + 1]+"!");
+        console.log(majors[0]);
+    })
 </script>
 </html>
