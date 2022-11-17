@@ -70,6 +70,8 @@ body {
     text-align: center;
     padding-top: 50px;
     color:azure;
+    font-weight: 900;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .major > .img-wrapper {
@@ -98,6 +100,10 @@ body {
     background-image: url('images/chem.jpg');
 }
 
+#chemEng > h1 {
+    color: blue;
+}
+
 #civEng {
     background-image: url('images/civil.jpg');
 }
@@ -110,12 +116,20 @@ body {
     background-image: url('images/env.png');
 }
 
+#env > h1 {
+    color: gold;
+}
+
 #finance {
     background-image: url('images/fin.webp');
 }
 
 #industrial {
     background-image: url('images/industrial.webp');
+}
+
+#industrial > h1 {
+    color: black;
 }
 
 #las {
@@ -148,4 +162,12 @@ body {
 
 #ssr {
     background-image: url('images/ssr.jpg');
+}
+
+#advHealth > h1 {
+    color: midnightblue;
+}
+
+#mech > h1 {
+    color: rgb(104, 89, 4);
 }
