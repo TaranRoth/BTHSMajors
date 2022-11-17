@@ -233,7 +233,6 @@ body {
 .foot{
     display: flex;
     height: 75px;
-<<<<<<< HEAD
     background-color: rgb(152, 152, 152);
 }
 
@@ -242,6 +241,3 @@ body {
     margin-top: 25px;
     color: white;
 }
-=======
-}
->>>>>>> 13a95166b7af164134e8434da06b79ff0716ff55
