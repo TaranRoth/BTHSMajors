@@ -205,5 +205,12 @@ body {
 
 #mech > h1 {
     color: rgb(104, 89, 4);
-    color: red
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.foot{
+    display: flex;
+    height: 75px;
 }
